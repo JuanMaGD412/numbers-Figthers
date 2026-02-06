@@ -25,7 +25,7 @@ public class DisparoPorVoz : MonoBehaviour
 
     void Disparar()
     {
-        Instantiate(proyectil, puntoDisparo);
+        Instantiate(proyectil, puntoDisparo.position, puntoDisparo.rotation);
         Debug.Log("FUEGGOOOOOOOOO");
     }
 }
