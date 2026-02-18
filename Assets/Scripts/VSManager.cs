@@ -7,23 +7,22 @@ public class VSManager : MonoBehaviour
 {
     public static VSManager Instance;
 
-    [Header("VS UI")]
-    public GameObject vsCanvas;
+    [Header("Vs prueba UI")]
+    public GameObject vsPanel;
     public Image imgJugador;
     public Image imgRival;
 
-    [Header("Sprites VS")]
-    public Sprite[] spritesVS;
+    [Header("Sprites Lista")]
+    public Sprite[] sprites;
 
     [Header("Fade")]
     public Image fade;
-    public float fadeSpeed = 1.5f;
+    public float fadeDuration = 1f;
 
-    private void Awake()
+    public void Awake()
     {
         Instance = this;
-
-        vsCanvas.SetActive(false);
+        vsPanel.SetActive(false);
         fade.gameObject.SetActive(false);
     }
 
@@ -34,39 +33,28 @@ public class VSManager : MonoBehaviour
 
     IEnumerator VSTransition()
     {
-        
-        GameManager.Instance.personajeRival =
-            Random.Range(0, spritesVS.Length);
+        GameManager.instance.personajeRival = Random.Range(0, sprites.Length);
 
-        
-        imgJugador.sprite =
-            spritesVS[GameManager.Instance.personajeSeleccionado];
+        imgJugador.sprite = sprites[GameManager.instance.personajeElegido];
+        imgRival.sprite = sprites[GameManager.instance.personajeRival];
 
-        imgRival.sprite =
-            spritesVS[GameManager.Instance.personajeRival];
-
-        vsCanvas.SetActive(true);
-
+        vsPanel.SetActive(true);
         yield return new WaitForSeconds(0.5f);
-
         fade.gameObject.SetActive(true);
         yield return StartCoroutine(FadeOut());
-
         SceneManager.LoadScene("Mapa1");
-
     }
 
     IEnumerator FadeOut()
     {
-        Color c = fade.color;
-        c.a = 0;
+       Color c = fade.color;
+        c.a = 0; ; 
         fade.color = c;
-
-        while (fade.color.a < 1)
-        {
-            c.a += Time.deltaTime * fadeSpeed;
-            fade.color = c;
-            yield return null;
-        }
+        while(fade.color.a < 1)
+         {
+             c.a += Time.deltaTime * fadeDuration;
+             fade.color = c;
+             yield return null;
+          }
     }
 }

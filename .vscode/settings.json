@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "numbers-Figthers.slnx"
+    "dotnet.defaultSolution": "number-figthers-grupo-2.slnx"
 }

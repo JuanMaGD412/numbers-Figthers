@@ -2,25 +2,36 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager instance;
 
-    [Header("Prefabs de pelea")]
     public GameObject[] personajes;
-
-    [Header("Selección")]
-    public int personajeSeleccionado = -1;
+    public int personajeElegido = -1;
     public int personajeRival = -1;
 
-    private void Awake()
+
+    void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

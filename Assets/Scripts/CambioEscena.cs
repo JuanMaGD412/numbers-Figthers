@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class CambioEscena : MonoBehaviour
 {
-    public void ChangeEscena ( int indiceEscena )
+    public void CambiarEscena (int indiceEscena)
     {
-        SceneManager.LoadScene( indiceEscena );
+        SceneManager.LoadScene(indiceEscena);
     }
 
     public void SalirJuego()
