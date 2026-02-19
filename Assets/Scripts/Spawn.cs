@@ -8,11 +8,11 @@ public class Spawn : MonoBehaviour
 
     private void Start()
     {
-        int id = GameManager.Instance.personajeSeleccionado;
-        Instantiate(GameManager.Instance.personajes[id], spawnPlayer.position, spawnPlayer.rotation);
+        int id = GameManager.instance.personajeElegido;
+        Instantiate(GameManager.instance.personajes[id], spawnPlayer.position, spawnPlayer.rotation);
 
-        int EnemyId = GameManager.Instance.personajeRival; ;
-        Instantiate(GameManager.Instance.personajes[EnemyId], spawnEnemy.position, spawnEnemy.rotation);
+        int EnemyId = GameManager.instance.personajeRival; ;
+        Instantiate(GameManager.instance.personajes[EnemyId], spawnEnemy.position, spawnEnemy.rotation);
     }
 
 }

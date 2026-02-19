@@ -1981,6 +1981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 819712681}
   - component: {fileID: 819712680}
+  - component: {fileID: 819712682}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -2017,6 +2018,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &819712682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819712679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed747968b401ba141ac4f1cd9979b56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 22931958}
+  - {fileID: 635567926}
+  - {fileID: 2053233460}
+  - {fileID: 959158564}
+  EnemysPrefabs:
+  - {fileID: 2689199317072090737, guid: 5e898235d87bf9244bcdd59ccae0b253, type: 3}
+  - {fileID: 8805064945493538392, guid: 812d659e3c1e76f43b16f072e2ad4b65, type: 3}
+  - {fileID: 2129124499347841373, guid: 9964666307f31984aaccc2254960a8b6, type: 3}
+  - {fileID: 1101459064995146547, guid: 1c135a5d6b477ba468186cac79ba205e, type: 3}
+  - {fileID: 4466704540985161752, guid: 68cdd604b291cdc4b80db544ef8151da, type: 3}
+  - {fileID: 9017186500503646307, guid: ffcc0c95207a7fd4ca3cd7465a6de8ba, type: 3}
+  timeBetweenSpawns: 0
+  spawnDelay: 2
+  currentWaves: 0
 --- !u!1 &831073603 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2707165541606733623, guid: 68f7512320c6ad24a928d078b32fc75a, type: 3}
