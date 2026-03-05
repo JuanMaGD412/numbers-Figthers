@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "84118441262",
+    "firebase_url": "https://practica-unity-b7b68-default-rtdb.firebaseio.com",
+    "project_id": "practica-unity-b7b68",
+    "storage_bucket": "practica-unity-b7b68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84118441262:android:8fa6c8f20dc5c785b63ebf",
+        "android_client_info": {
+          "package_name": "com.VD1.numbersFigthers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbiYCQPopdJK1rfMXHk8BU1dSeoeCPsYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

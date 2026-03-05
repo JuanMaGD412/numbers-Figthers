@@ -1,0 +1,22 @@
+{
+    "items":[
+        { "nombre": "Circulo", 
+        "tipo": "circulo",
+        "tamaño": "1.5",
+        "cantidad": 2,
+        "color": "#04D9FF"
+        },
+        { "nombre": "Cuadrado", 
+        "tipo": "cuadrado",
+        "tamaño": "3",
+        "cantidad": 4,
+        "color": "#00913f"
+        },
+        { "nombre": "Cilindro", 
+        "tipo": "cilindro",
+        "tamaño": "2",
+        "cantidad": 1,
+        "color": "#642424"
+        }
+    ]
+}
